@@ -33,6 +33,8 @@ jobs:
   publish:
     needs: test
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
     
     steps:
       - name: Clone the repository
